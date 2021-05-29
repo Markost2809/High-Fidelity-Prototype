@@ -4,9 +4,9 @@
   <link rel='stylesheet' href='styles.css'>
   <title>Book Program Discussion</title>
 </head>
-<body>
-  <div id="navbar">
-    <div class="container">
+<body class="custom-background-color">
+  <!--navigation-->
+    <div class="navbar">
       <nav>
         <ul>
           <li><a href="#">Home</a> </li>
@@ -15,34 +15,63 @@
           <li><a href="#">Get Started</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">Members</a></li>
-          <li><button id="trigger-modal">Register</button></li>
+          <li><a href="#" id="trigger-modal">Register</a></li>
         </ul>
       </nav>
-    </div>
   </div>
-  <div id="Modal">
+
+
+  <!--Modal Window-->
+  <div id="color-overlay">
+  </div>
+  <div id="bookclubrego" class="custom-background-color">
+
     <button id="exit">close</button>
-    <div id="userDetails">
-      <ul>
-        <li>Given name <input></li>
-        <li>Surname<input></li>
-        <li>Username<input></li>
-        <li>Password<input></li>
-    </div >
-    <div id="Addresses">
-      <ul>
-        <li>Home Address<input></li>
-        <li>Work Address<input></li>
-      </ul>
-    </div >
-    <div id="Contacts">
-      <ul>
-        <li>Mobile Number<input></li>
-        <li>Email<input></li>
-      </ul>
+    <form>
+      <h1 style ="text-align: center;">User Details</h1>
+      <div id="userDetails">
+        <label for="GivenName">Given name:</label>
+        <input type="text" class="GivenName" name="GivenName"><br>
+        <label for="Surname">Surname:</label>
+        <input type="text" id="Surname" name="Surname"><br>
+        <label for="FirstName">First name:</label>
+        <input type="text" id="FirstName" name="FirstName"><br>
+        <label for="LastName">Last name:</label>
+        <input type="text" id="LastName" name="LastName">
+      </div>
+      <h1 style="text-align: center;">Addresses</h1>
+      <div id="Addresses">
+        <label for="GivenName">Given name:</label>
+        <input type="text" id="GivenName" name="GivenName"><br>
+        <label for="Surname">Surname:</label>
+        <input type="text" id="Surname" name="Surname">
+      </div>
+      <h1 style="text-align: center;" >Contacts</h1>
+      <div id="Contacts">
+        <label for="GivenName">Given name:</label>
+        <input type="text" id="GivenName" name="GivenName"><br>
+        <label for="Surname">Surname:</label>
+        <input type="text" id="Surname" name="Surname">
+      </div>
+    </form>
     </div>
-    
+
+
+
+
+  <!--Splash-->
+  <div id='Splash'>
+    <div class="color-overlay">
+      <h1>Book Program Discussion</h1>
+    </div>
+
   </div>
+  <!--filler-->
+  <div id='filler'>
+    DEEZ NUTS
+  </div>
+
+  <!--Javascript-->
   <script src="script.js"></script>
 </body>
 </html>
