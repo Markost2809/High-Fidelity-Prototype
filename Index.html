@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <link rel='stylesheet' href='styles.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Book Program Discussion</title>
 </head>
 <body class="custom-background-color">
   <!--navigation-->
     <div class="navbar">
+      <img src="Logo.png" style="width:70px;height:70px;" alt='BPD logo'>
       <nav>
         <ul>
           <li><a class ="custom-color" href="#">Home</a> </li>
@@ -20,52 +22,52 @@
       </nav>
   </div>
 
-
   <!--Modal Window-->
   <div id="color-overlay">
   </div>
-  <div id="bookclubrego" class="custom-background-color">
-    <h1 style="text-align: center;color:#fff0ca;">REGISTRATION</h1>
-    <button id="exit">close</button>
+  <div id="bookclubrego" >
+    <button id="exit">X</button>
+    <h1 class="custom-color title">REGISTRATION FORM</h1>
+
     <form>
-      <h1 style ="text-align: center;">User Details</h1>
       <div id="userDetails">
+        <h3>User Details</h3>
         <span id="inputfield">
-        <label for="GivenName">Given Name:</label>
+        <label for="GivenName" class="custom-color">Given Name:</label>
         <input type="text" class="GivenName" name="GivenName">
         </span>
         <span id="inputfield">
-        <label for="Surname">Surname:</label>
+        <label for="Surname" class="custom-color">Surname:</label>
         <input type="text" id="Surname" name="Surname">
         </span>
         <span id="inputfield">
-        <label for="FirstName">First Name:</label>
+        <label for="FirstName" class="custom-color">First Name:</label>
         <input type="text" id="FirstName" name="FirstName">
         </span>
         <span id="inputfield">
-        <label for="LastName">Last Name:</label>
+        <label for="LastName" class="custom-color">Last Name:</label>
         <input type="text" id="LastName" name="LastName">
       </span>
       </div>
-      <h1 style="text-align: center;">Addresses</h1>
       <div id="Addresses">
+        <h3>Addresses</h3>
         <span id="inputfield">
-        <label for="HomeAddress">Home Address:</label>
+        <label for="HomeAddress" class="custom-color">Home Address:</label>
         <input type="text" id="HomeAddress" name="HomeAddress">
       </span>
         <span id="inputfield">
-        <label for="WorkAddress">Work Address:</label>
+        <label for="WorkAddress" class="custom-color">Work Address:</label>
         <input type="text" id="WorkAddress" name="WorkAddress">
       </span>
       </div>
-      <h1 style="text-align: center;" >Contacts</h1>
       <div id="Contacts">
+        <h3>Contacts</h3>
         <span id="inputfield">
-        <label for="MobileNumber">Mobile Number:</label>
+        <label for="MobileNumber" class="custom-color">Mobile Number:</label>
         <input type="text" id="MobileNumber" name="MobileNumber">
       </span>
           <span id="inputfield">
-        <label for="Email">Email:</label>
+        <label for="Email" class="custom-color">Email:</label>
         <input type="text" id="Email" name="Email">
       </span>
       </div>
@@ -81,10 +83,74 @@
       <h1>Book Program Discussion</h1>
 
   </div>
-  <!--filler-->
-  <div id='filler'>
-    DEEZ NUTS
+  <!--Get-Involved-->
+  <div id='get-involved'>
+    <h1>Get Involved</h1>
+    <div class="column">
+      <div class="container">
+        <div class="top-half" style='background-image:url(meet_people.jpg);'>
+        </div>
+        <div class="bottom-half">
+          <p class="custom-color">Meet new people...</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <div class="top-half" style="background-image: url(adventure.jpg);">
+        </div>
+        <div>
+          <p class="custom-color">Experience new and interesting reading adventures...</p>
+        </div>
+      </div>
+    </div>
+    <div class="column"> 
+      <div class="container">
+        <div class="top-half" style='background-image:url(book_group.jpg);'>
+        </div>
+        <div class="bottom-half ">
+          <p class="custom-color">Whatever the reason you want to be part of a book group, we can help</p>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!--Books-->
+  <div id="books">
+    <div class="books-container">
+      <div id="books-text" class="custom-color">
+        <h1  id="books-title"> About us </h1>
+        <div class = "info">
+          <p>Book Program Discussion(BPD) is a non profit organisation that lends
+            books and professional discussion notes to participating book groups
+          </p>
+          <p>Groups make their book selections from an extensive book
+            catalogue and receive enough copies of their selected book to allow everyone in the group
+            to read the same book at the same time
+          </p>
+          <p>
+            Checkout out our large range of books <a href="#"> here </a>
+          </p>
+        </div>
+      </div>
+      <div id="books-image">
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer style="position: relative;">
+    <div id="footer-text" style="text-align: center;">
+      <p>Book Program Discussion</p>
+      <span>&copy;2020. All Rights Reserved</span> 
+      <div id="social">
+        <a href="#" class="fa fa-instagram custom-color"></a>
+        <a href="#" class="fa fa-facebook custom-color"></a>
+        <a href="#" class="fa fa-twitter custom-color"></a>
+      </div>
+    </div>
+  </footer>
+
 
   <!--Javascript-->
   <script src="script.js"></script>

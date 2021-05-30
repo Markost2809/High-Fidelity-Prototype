@@ -1,39 +1,97 @@
+/*preset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+body {
+  margin: 0;
+  background: #444;
+}
+/*Colors */
 .custom-color {
   color: #47402e;
 }
 .custom-background-color {
   background-color: #47402e;
 }
+
+/*Trigger Modal*/
 #trigger-modal {
 }
+
 #bookclubrego {
+  background-color: #fff0ca;
   display: none;
   position: fixed;
   z-index: 3;
   margin: auto;
   max-width: 700px;
   width: 100%;
-  border-radius: 15px;
-  padding: 20px 100px 0px 100px;
-  height: 80%;
+  border-radius: 5px;
+  padding: 20px 20px 0px 20px;
+  height: 90%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: auto;
 }
-
-body {
-  margin: 0;
-  background: #444;
-
+#color-overlay {
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  z-index: 2;
 }
 
+.title {
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+#exit {
+  float: right;
+  padding: 8px 15px;
+  font-weight: 900;
+}
+input[type="text"] {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+label {
+  display: block;
+  width: 200px;
+  font-weight: 600;
+}
+#inputfield {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+input[type="submit"] {
+  position: fixed;
+  bottom: 10px;
+  width: 95%;
+  padding: 8px 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#userDetails,
+#Addresses {
+  padding-bottom: 40px;
+}
+
+/*Navigation*/
 .navbar {
   width: 100%;
   margin: auto;
@@ -70,7 +128,6 @@ nav a {
 }
 
 nav a:hover {
-
   font-weight: 600;
 }
 
@@ -79,7 +136,7 @@ nav a::before {
   display: block;
   height: 5px;
   width: 0%;
-  background-color: #000;
+  background-color: #47402e;
   position: absolute;
   top: 0;
 
@@ -89,11 +146,15 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+img {
+  margin: 2.5px 10px 0px 50px;
+}
 
+/*Splash Screen */
 #Splash {
   background-image: url("splash.jpg");
   background-size: cover;
-  height: 60vh;
+  height: 100vh;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -101,11 +162,10 @@ nav a:hover::before {
   align-items: center;
   text-align: center;
   padding: 0 2px;
-  
 }
-#Splash h1 , #Splash h3{
-  color:#00C9AA;
-
+#Splash h1,
+#Splash h3 {
+  color: #00f0cc;
   font-size: 64px;
   position: relative;
   z-index: 1;
@@ -114,46 +174,105 @@ nav a:hover::before {
   color: #fff;
   font-size: 32px;
 }
-#Splash h3 a{
-
-}
-#filler {
+.tint {
   height: 100vh;
-}
-#exit {
-  float: right;
-}
-
-#userDetails,
-#Addresses {
-}
-input{
   width: 100%;
-}
-#color-overlay {
   background-color: black;
   opacity: 0.8;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  display: none;
-  z-index: 2;
-}
-label{
-  display: block;
-  width: 200px;
-  font-weight: 600;
-}
-#inputfield{
-  display:flex;
+  position: absolute;
 }
 
-#filler {
+/*Get-Involved Section*/
+#get-involved {
+  font-weight: 700;
+  text-align: center;
+  padding: 0px 10vw 0px 10vw;
+  height: 100vh;
 }
-.tint{
-  height:60vh;
-  width:100%;
-  background-color: black;
-  opacity:0.7;
-  position:absolute;
+#get-involved h1 {
+  text-align: center;
+  font-size: 36px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #00f0cc;
+  border-bottom: 2px solid black;
+}
+.column {
+  width: 33.33%;
+  float: left;
+  padding: 0px 3vw 150px 3vw;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 2vh 10px 0px 10px;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  height: 70vh;
+  background-color: #fff0ca;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.top-half {
+  height: 70%;
+  background-size: cover;
+}
+.bottom-half {
+  padding: 0px 10px 0px 10px;
+}
+#books {
+  height: 80vh;
+}
+.books-container {
+  background-color: #fff0ca;
+  height: 60vh;
+  width: 80vw;
+  margin: auto;
+  border-radius: 15px;
+}
+
+#books-text {
+  width: 50%;
+  float: right;
+  padding: 0px 50px 0px 50px;
+}
+#books-image {
+  width: 50%;
+  background-image: url(books.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#books-title {
+  text-align: center;
+  font-size: 64px;
+}
+.info {
+  padding-top: 50px;
+}
+/*footer*/
+footer {
+  bottom: 0px;
+  background: #fff0ca;
+  height: 20vh;
+}
+footer a {
+  text-decoration: none;
+}
+.fa {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 0px 5px;
+  border-radius: 1000px;
+}
+#social {
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
