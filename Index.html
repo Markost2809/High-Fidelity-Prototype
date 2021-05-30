@@ -9,13 +9,13 @@
     <div class="navbar">
       <nav>
         <ul>
-          <li><a href="#">Home</a> </li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Get Started</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Members</a></li>
-          <li><a href="#" id="trigger-modal">Register</a></li>
+          <li><a class ="custom-color" href="#">Home</a> </li>
+          <li><a class ="custom-color" href="#">About Us</a></li>
+          <li><a class ="custom-color" href="#">Books</a></li>
+          <li><a class ="custom-color" href="#">Get Started</a></li>
+          <li><a class ="custom-color" href="#">News</a></li>
+          <li><a class ="custom-color" href="#">Members</a></li>
+          <li><a class ="custom-color" href="#" id="trigger-modal">Register</a></li>
         </ul>
       </nav>
   </div>
@@ -25,45 +25,60 @@
   <div id="color-overlay">
   </div>
   <div id="bookclubrego" class="custom-background-color">
-
+    <h1 style="text-align: center;color:#fff0ca;">REGISTRATION</h1>
     <button id="exit">close</button>
     <form>
       <h1 style ="text-align: center;">User Details</h1>
       <div id="userDetails">
-        <label for="GivenName">Given name:</label>
-        <input type="text" class="GivenName" name="GivenName"><br>
+        <span id="inputfield">
+        <label for="GivenName">Given Name:</label>
+        <input type="text" class="GivenName" name="GivenName">
+        </span>
+        <span id="inputfield">
         <label for="Surname">Surname:</label>
-        <input type="text" id="Surname" name="Surname"><br>
-        <label for="FirstName">First name:</label>
-        <input type="text" id="FirstName" name="FirstName"><br>
-        <label for="LastName">Last name:</label>
+        <input type="text" id="Surname" name="Surname">
+        </span>
+        <span id="inputfield">
+        <label for="FirstName">First Name:</label>
+        <input type="text" id="FirstName" name="FirstName">
+        </span>
+        <span id="inputfield">
+        <label for="LastName">Last Name:</label>
         <input type="text" id="LastName" name="LastName">
+      </span>
       </div>
       <h1 style="text-align: center;">Addresses</h1>
       <div id="Addresses">
-        <label for="GivenName">Given name:</label>
-        <input type="text" id="GivenName" name="GivenName"><br>
-        <label for="Surname">Surname:</label>
-        <input type="text" id="Surname" name="Surname">
+        <span id="inputfield">
+        <label for="HomeAddress">Home Address:</label>
+        <input type="text" id="HomeAddress" name="HomeAddress">
+      </span>
+        <span id="inputfield">
+        <label for="WorkAddress">Work Address:</label>
+        <input type="text" id="WorkAddress" name="WorkAddress">
+      </span>
       </div>
       <h1 style="text-align: center;" >Contacts</h1>
       <div id="Contacts">
-        <label for="GivenName">Given name:</label>
-        <input type="text" id="GivenName" name="GivenName"><br>
-        <label for="Surname">Surname:</label>
-        <input type="text" id="Surname" name="Surname">
+        <span id="inputfield">
+        <label for="MobileNumber">Mobile Number:</label>
+        <input type="text" id="MobileNumber" name="MobileNumber">
+      </span>
+          <span id="inputfield">
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email">
+      </span>
       </div>
+      <input type="submit" value="Register" class="btn">
     </form>
     </div>
 
-
-
-
   <!--Splash-->
   <div id='Splash'>
-    <div class="color-overlay">
-      <h1>Book Program Discussion</h1>
+    <div class="tint">
     </div>
+      <h3>Welcome to</h3>
+      <h1>Book Program Discussion</h1>
 
   </div>
   <!--filler-->
